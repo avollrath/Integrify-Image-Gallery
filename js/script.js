@@ -1,17 +1,10 @@
 const imageCard = document.querySelector('.cardFront');
 const infoCard = document.querySelector('.cardBack');
-<<<<<<< HEAD
-const btnBack = document.querySelector('.back');
-const btnNext = document.querySelector('.next');
-
-person = 0;
-=======
 const btnPrev = document.querySelector('.prevBtn');
 const btnNext = document.querySelector('.nextBtn');
 let person = 0;
 let active = 9;
 
->>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
 
 function createImage(arr) {
     const {src} = arr;
@@ -19,53 +12,6 @@ function createImage(arr) {
 };
 
 
-<<<<<<< HEAD
-
-function createContent(arr) {
-        const {firstName, lastName, title, nationality, skills, whySofterDeveloper, longTermVision, motivatesMe, favoriteQuote} = arr;
-        return `<h2>${firstName} ${lastName}</h2>
-        <p>${title}</p>
-        <p>${nationality}</p>
-        <p>${skills.join(', ')}</p>
-        <p>${whySofterDeveloper}</p>
-        <p>${longTermVision}</p>
-        <p>${motivatesMe}</p>
-        <p>${favoriteQuote}</p>`;
-    }
-
-
-function showPerson(){
-imageCard.innerHTML = createImage(peopleObject[person]);    
-infoCard.innerHTML = createContent(peopleObject[person]);
-}
-
-
-
-btnNext.addEventListener ('click', function() 
-
-{
-person++
-showPerson(person);  
-    
- }, 
- false
-);
-
-
-btnBack.addEventListener ('click', function() 
-
-{
-person--
-showPerson(person);  
-    
- }, 
- false
-);
-
-
-
-
-=======
 function createContent(arr) {
     const {firstName, lastName, title, nationality, skills, whySofterDeveloper, longTermVision, motivatesMe, favoriteQuote} = arr;
     return `<h1>${firstName} ${lastName}</h1>
@@ -216,4 +162,3 @@ document.onkeydown = function (evt) {
             enterKeyPressed();
     }
 };
->>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
