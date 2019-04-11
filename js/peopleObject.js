@@ -132,11 +132,7 @@ const peopleObject = [
         lastName: 'Vrapi',
         title: 'Junior Developer',
         nationality: 'Albanian',
-<<<<<<< HEAD
-        src: 'notpicture.jpg',
-=======
         src: 'nophoto.jpg',
->>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
         alt: 'Alba',
         skills: ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'JAVA', 'SQL', 'NODE JS'],
         whySofterDeveloper: 'It is a creative job , and gives the possibility to learn continuously.',
@@ -217,8 +213,6 @@ const peopleObject = [
         favoriteQuote: 'To be without dreams is to be without hope, to be without hope is to be without purpose!',
         joinedOn: '21.01.2019',
     },
-<<<<<<< HEAD
-=======
     {   firstName:'Simon ',
         lastName:'Maher',
         title:'Mr',
@@ -232,7 +226,6 @@ const peopleObject = [
         favoriteQuote:'',
         joinedOn:''
 },
->>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
     {
         firstName: 'Muhammad Husham',
         lastName: 'Yousaf',
@@ -275,9 +268,6 @@ const peopleObject = [
         motivatesMe: 'When I can use my code to solve a real life problem',
         favoriteQuote: 'Code solve problems, and it can make the world a better place. Do good with code',
         joinedOn: '21.01.2019',
-<<<<<<< HEAD
-    },
-=======
     },{     firstName:'Garland ',
         lastName:'Rajasalan',
         title:'Junior developer',
@@ -318,5 +308,4 @@ const peopleObject = [
         favoriteQuote: 'Sow a thought and you reap an action; sow an act and you reap a habit; sow a habit and you reap a character; sow a character and you reap a destiny.',
         joinedOn: '21.01.2019'
         }
->>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
 ];
