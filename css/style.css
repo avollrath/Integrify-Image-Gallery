@@ -5,13 +5,27 @@
     box-sizing: border-box;
 }
 
-/* main {
-    display: flex;
-} */
+body {
+
+background-image: url(../assets/images/bg.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+}
 
 .carousel {
-    display: flex;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
 }
+
+.carousel-cell {
+    position: absolute;
+    transition: transform 500ms ease-out, left 500ms ease-out, opacity 500ms, z-index 0s;
+
+}
+
 
 
 h1 {
@@ -45,19 +59,6 @@ font-size: 3rem;
  
  }
 
-.personCard {
-
-margin:auto;
-display: block;
-width: 600px;
-text-align: center;
-
-
-}
-
-/* .personCard:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-} */
 
 .personCard img{
 width: 80%;
@@ -83,18 +84,13 @@ text-align: center;
     width: 100%;
     height: 100%;
     position: relative;
-    transition: transform 600ms ease-out;
+    transition: 600ms ease-out;
     transform-style: preserve-3d;
     cursor: pointer;
     border-radius: 20px;
 }
 
 .card {
-    /* position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-    border: 1px solid tomato; */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -152,3 +148,50 @@ span {
     font-weight: 900;
 }
 
+.hidden {
+    opacity: 0;
+}
+
+.prevHidden {
+    opacity: 0;
+    left: 0%;
+    transform: translateY(3%) translateX(-50%) scale(0.4);
+}
+
+.prevSecond {
+    opacity: 0.5;
+    z-index: 4;
+    left: 15%;
+    transform: translateY(3%) translateX(-50%) scale(0.6);
+}
+
+.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(3%) translateX(-50%) scale(0.8);
+}
+
+.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(3%) translateX(-50%) scale(0.8);
+}
+
+.nextSecond {
+    opacity: 0.5;
+    z-index: 4;
+    left: 85%;
+    transform: translateY(3%) translateX(-50%) scale(0.6);
+}
+
+.nextHidden {
+    opacity: 0;
+    left: 100%;
+    transform: translateY(3%) translateX(-50%) scale(0.4);
+}
