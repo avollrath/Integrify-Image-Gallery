@@ -32,12 +32,6 @@ function addEventListener() {
     card.addEventListener('click', e => {
         card.classList.toggle('is-flipped');
     });
-
-    card.addEventListener('keypress', e => {
-        let key = e.which || e.keyCode;
-        if (key === 13){  
-        card.classList.toggle('is-flipped');}
-    });
 });
 }
 
@@ -51,7 +45,9 @@ function createCards() {
     let content = createContent(peopleObject[i]);
     newCard.innerHTML = `<div class="scene">
                         <section class="personCard">
-                        <div class="card cardFront">${image}</div>
+                        <div class="card cardFront">${image}
+                        <div class="name-box">${peopleObject[i].firstName}</div>
+                        </div>
                         <div class="card cardBack">${content}</div>
                         </section>
                         </div>`;
