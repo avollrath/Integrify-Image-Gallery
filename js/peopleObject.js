@@ -132,7 +132,11 @@ const peopleObject = [
         lastName: 'Vrapi',
         title: 'Junior Developer',
         nationality: 'Albanian',
+<<<<<<< HEAD
         src: 'notpicture.jpg',
+=======
+        src: 'nophoto.jpg',
+>>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
         alt: 'Alba',
         skills: ['HTML', 'CSS', 'JAVASCRIPT', 'REACT', 'JAVA', 'SQL', 'NODE JS'],
         whySofterDeveloper: 'It is a creative job , and gives the possibility to learn continuously.',
@@ -213,6 +217,22 @@ const peopleObject = [
         favoriteQuote: 'To be without dreams is to be without hope, to be without hope is to be without purpose!',
         joinedOn: '21.01.2019',
     },
+<<<<<<< HEAD
+=======
+    {   firstName:'Simon ',
+        lastName:'Maher',
+        title:'Mr',
+        nationality:'British',
+        src:'simon.jpg',
+        alt:'',
+        skills:['Javascript', 'CSS', 'HTML'],
+        whySofterDeveloper:'To delve into a new and exciting career',
+        longTermVision:'To enter into the Cyber Security field ',
+        motivatesMe:'',
+        favoriteQuote:'',
+        joinedOn:''
+},
+>>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
     {
         firstName: 'Muhammad Husham',
         lastName: 'Yousaf',
@@ -255,5 +275,48 @@ const peopleObject = [
         motivatesMe: 'When I can use my code to solve a real life problem',
         favoriteQuote: 'Code solve problems, and it can make the world a better place. Do good with code',
         joinedOn: '21.01.2019',
+<<<<<<< HEAD
     },
+=======
+    },{     firstName:'Garland ',
+        lastName:'Rajasalan',
+        title:'Junior developer',
+        nationality:'Indian',
+        src:'garland.jpg',
+        alt:'Garland Rajasalan',
+        skills:['HTML', 'CSS', 'JavaScript','c#', 'ASP.NET', 'SQL'],
+        whySofterDeveloper:'I Like Problem Solving',
+        longTermVision:'To become as an Full Stack Developer',
+        motivatesMe:'Solution for the problem',
+        favoriteQuote:'Slow and steady win the race',
+        joinedOn:'21.01.19'
+    },
+    {   firstName:'Kunjan',
+        lastName:'Ghimire',
+        title:'Junior Developer',
+        nationality:'Nepalese',
+        src:'kunjan.jpg',
+        alt:'Kunjan ghimire',
+        skills:['HTML', 'CSS', 'JavaScript','React' ],
+        whySofterDeveloper:'To enhance my learning and creativity',
+        longTermVision:'To be able to use my knowledge to solve problems and help others ',
+        motivatesMe:'Pursuing what I love',
+        favoriteQuote:'If you don`t like something, change it. If you can`t change it, change the way you think about it.',
+        joinedOn:'21-1-2018'
+    },
+    {
+        firstName: 'Sooyeon',
+        lastName: 'Choi',
+        title: 'Junior Web Developer',
+        nationality: 'South Korea',
+        src: 'nophoto.jpg',
+        alt: 'sooyeon',
+        skills: ['HTML', 'CSS', 'JavaScript'],
+        whySofterDeveloper: 'I love to create',
+        longTermVision: 'I wanna help people who wants to learn technology and how technology can influence their lives',
+        motivatesMe: 'People',
+        favoriteQuote: 'Sow a thought and you reap an action; sow an act and you reap a habit; sow a habit and you reap a character; sow a character and you reap a destiny.',
+        joinedOn: '21.01.2019'
+        }
+>>>>>>> 7999ad2887b8c9f57ddd99b05ffae0ced3ccce57
 ];
