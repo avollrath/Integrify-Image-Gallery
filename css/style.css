@@ -60,8 +60,9 @@ font-size: 3rem;
  
  button {
  
- background: none;
- border:none;  
+ background:none;
+ border:none;
+transition: 210ms ease-out;
  
  }
 

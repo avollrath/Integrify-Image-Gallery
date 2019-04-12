@@ -8,7 +8,7 @@ let active = 9;
 
 function createImage(arr) {
     const {src} = arr;
-    return `<img src="../assets/images/${src}">`
+    return `<img src="./assets/images/${src}">`
 };
 
 
@@ -26,13 +26,44 @@ function createContent(arr) {
 
 
 function addEventListener() {
-
+    
     const cards = document.querySelectorAll('.personCard');
     cards.forEach(function(card){
     card.addEventListener('click', e => {
         card.classList.toggle('is-flipped');
     });
 });
+
+document.onkeydown = function (evt) {
+    evt = evt || window.event;
+    switch (evt.keyCode) {
+        case 37:
+            leftArrowPressed();
+            break;
+        case 39:
+            rightArrowPressed();
+            break;
+        case 13:
+            enterKeyPressed();
+    }
+};
+
+btnNext.addEventListener('click', function() {
+    active ++;
+    showActiveCards(active);
+    btnNext.style.transform = 'scale(1.3)';
+    setTimeout(function(){ btnNext.style.transform = 'scale(1)'; }, 210);
+})
+
+
+btnPrev.addEventListener('click', function() {
+    active --;
+    showActiveCards(active);
+    btnPrev.style.transform = 'scale(1.3)';
+    setTimeout(function(){ btnPrev.style.transform = 'scale(1)'; }, 210);
+})
+
+
 }
 
 
@@ -54,12 +85,6 @@ function createCards() {
     document.querySelector('.carousel').appendChild(newCard); 
     }
 }
-
-
-createCards();
-addEventListener();
-showActiveCards(active);
-
 
 
 function showActiveCards(activeCard) {
@@ -116,27 +141,20 @@ function showActiveCards(activeCard) {
 
 }
 
-btnNext.addEventListener('click', function() {
-    active ++;
-    showActiveCards(active);
-})
-
-
-btnPrev.addEventListener('click', function() {
-    active --;
-    showActiveCards(active);
-})
-
 
 
 function leftArrowPressed() {
     active --;
+    btnPrev.style.transform = 'scale(1.3)';
     showActiveCards(active);
+    setTimeout(function(){ btnPrev.style.transform = 'scale(1)'; }, 210);
 }
 
 function rightArrowPressed() {
     active ++;
+    btnNext.style.transform = 'scale(1.3)';
     showActiveCards(active);
+    setTimeout(function(){ btnNext.style.transform = 'scale(1)'; }, 210);
 }
 
 function enterKeyPressed() {
@@ -149,16 +167,8 @@ function enterKeyPressed() {
     });
 }
 
-document.onkeydown = function (evt) {
-    evt = evt || window.event;
-    switch (evt.keyCode) {
-        case 37:
-            leftArrowPressed();
-            break;
-        case 39:
-            rightArrowPressed();
-            break;
-        case 13:
-            enterKeyPressed();
-    }
-};
+
+
+createCards();
+addEventListener();
+showActiveCards(active);
