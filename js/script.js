@@ -2,8 +2,7 @@ const imageCard = document.querySelector('.cardFront');
 const infoCard = document.querySelector('.cardBack');
 const btnPrev = document.querySelector('.prevBtn');
 const btnNext = document.querySelector('.nextBtn');
-let person = 0;
-let active = 9;
+let active = 6; // sets the selected person
 
 
 function createImage(arr) {
@@ -32,36 +31,37 @@ function addEventListener() {
     card.addEventListener('click', e => {
         card.classList.toggle('is-flipped');
     });
-});
+    });
 
-document.onkeydown = function (evt) {
-    evt = evt || window.event;
-    switch (evt.keyCode) {
-        case 37:
-            leftArrowPressed();
-            break;
-        case 39:
-            rightArrowPressed();
-            break;
-        case 13:
-            enterKeyPressed();
-    }
-};
-
-btnNext.addEventListener('click', function() {
+    btnNext.addEventListener('click', function() {
     active ++;
     showActiveCards(active);
     btnNext.style.transform = 'scale(1.3)';
     setTimeout(function(){ btnNext.style.transform = 'scale(1)'; }, 210);
-})
+    })
 
 
-btnPrev.addEventListener('click', function() {
+    btnPrev.addEventListener('click', function() {
     active --;
     showActiveCards(active);
     btnPrev.style.transform = 'scale(1.3)';
     setTimeout(function(){ btnPrev.style.transform = 'scale(1)'; }, 210);
-})
+    })
+
+    document.onkeydown = function (evt) {
+        evt = evt || window.event;
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 13:
+                enterKeyPressed();
+                break;
+        }
+    };
 
 
 }
@@ -142,7 +142,6 @@ function showActiveCards(activeCard) {
 }
 
 
-
 function leftArrowPressed() {
     active --;
     btnPrev.style.transform = 'scale(1.3)';
@@ -168,7 +167,15 @@ function enterKeyPressed() {
 }
 
 
-
+function init(){
 createCards();
 addEventListener();
 showActiveCards(active);
+}
+
+
+init();
+
+
+
+
