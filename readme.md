@@ -1,5 +1,5 @@
 # INTEGRIFY Students image gallery
-Just a simple image gallery with flipable 3D Card, made with HTML, CSS and JavaScript
+Just a simple image gallery with flipable 3D cards, made with HTML, CSS and JavaScript
 # Demo
 
 https://avollrath.github.io/Integrify-Image-Gallery/
